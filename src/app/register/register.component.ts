@@ -2,13 +2,12 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../shared/components/header/header.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
 
-
 @Component({
-  selector: 'app-home',
+  selector: 'app-register',
   imports: [HeaderComponent, FooterComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.css'
 })
-export class HomeComponent {
+export class RegisterComponent {
 
 }
