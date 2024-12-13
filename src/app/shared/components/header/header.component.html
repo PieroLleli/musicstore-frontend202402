@@ -1,44 +1,15 @@
-<header
-  class="box-shadow"
-  style="
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    height: 80px;
-  "
->
-  <div
-    style="
-      width: 1000px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-    "
-  >
-    <div style="display: flex; align-items: center; gap: 10px">
-      <img
-        src="assets/images/logo.png"
-        alt="logo"
-        style="width: 50px; height: 50px"
-      />
-      <h1 style="font-size: 16px; color: white">MUSICA EVENTS</h1>
+<header class="box-shadow">
+  <div class="container">
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="logo" />
+      <h1>MUSICA EVENTS</h1>
     </div>
     <div>
-      <input
-        type="text"
-        placeholder="Buscar..."
-        style="
-          width: 300px;
-          height: 30px;
-          border-radius: 8px;
-          padding-left: 10px;
-        "
-      />
+      <input type="text" placeholder="Buscar..." class="search-bar" />
     </div>
-    <div style="display: flex; gap: 20px">
-      <button mat-button style="color: var(--primary-color)">INGRESAR</button>
-      <button mat-button style="color: var(--accent-color)">REGISTRATE</button>
+    <div class="buttons-container">
+      <button mat-button class="login">INGRESAR</button>
+      <button mat-button class="register">REGISTRATE</button>
     </div>
   </div>
 </header>

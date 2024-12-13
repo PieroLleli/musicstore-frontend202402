@@ -1,0 +1,45 @@
+header{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+
+    & .container{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        & .logo-container{
+            display: flex; align-items: center; gap: 10px;
+
+            & img{
+                width: 50px; height: 50px;
+            }
+
+            & h1{
+                font-size: 16px; color: white
+            }
+        }
+
+        & .search-bar{
+            width: 300px;
+          height: 30px;
+          border-radius: 8px;
+          padding-left: 10px;
+        }
+
+        & .buttons-container{
+            display: flex; gap: 20px;
+
+            & .login{
+                color: var(--primary-color)
+            }
+
+            & .register{
+                color: var(--accent-color)
+            }
+        }
+    }
+}
