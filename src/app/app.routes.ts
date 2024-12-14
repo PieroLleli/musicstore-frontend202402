@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 export const routes: Routes = [
     {
@@ -10,8 +6,25 @@ export const routes: Routes = [
         pathMatch: 'full',
         redirectTo: 'home'
     },
-    { path: 'forgot-password', pathMatch: 'full', component: ForgotPasswordComponent },
-    { path: 'home', pathMatch: 'full', component: HomeComponent },
-    { path: 'login', pathMatch: 'full', component: LoginComponent },
-    { path: 'register', pathMatch: 'full', component: RegisterComponent }
+    { 
+        path: 'forgot-password', 
+        pathMatch: 'full', 
+        loadComponent: () => import('./forgot-password/forgot-password.component').then(z=> z.ForgotPasswordComponent)
+     },
+    { 
+        path: 'home',
+        pathMatch: 'full',
+        loadComponent: () => import('./home/home.component').then(z=> z.HomeComponent)
+        
+    },
+    { 
+        path: 'login', 
+        pathMatch: 'full', 
+        loadComponent: () => import('./login/login.component').then(z=> z.LoginComponent)
+    },
+    { 
+        path: 'register',
+        pathMatch: 'full', 
+        loadComponent: () => import('./register/register.component').then(z=> z.RegisterComponent)
+    }
 ];
