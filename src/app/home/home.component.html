@@ -5,14 +5,14 @@
     <mat-form-field>
       <mat-label>Género musicals</mat-label>
       <mat-select>
-        <mat-option value="1">Rock</mat-option>
-        <mat-option value="2">Salsa</mat-option>
-        <mat-option value="2">Techno</mat-option>
+        <mat-option *ngFor="let item of genres" [value]="item.id">
+          {{ item.name }}
+        </mat-option>
       </mat-select>
     </mat-form-field>
     <span>Seleccion tu género musical favorito</span>
   </section>
-  <button (click)="test()">Click me !!</button>
+
   <section class="event-list">
     <app-event-card> </app-event-card>
     <app-event-card> </app-event-card>
