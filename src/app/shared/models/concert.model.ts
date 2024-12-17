@@ -2,7 +2,7 @@ export interface Concert {
   id: number;
   title: string;
   description: string;
-  placa: string;
+  place: string;
   unitPrice: number;
   genre: string;
   genreId: number;

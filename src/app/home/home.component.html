@@ -14,11 +14,8 @@
   </section>
 
   <section class="event-list">
-    <app-event-card> </app-event-card>
-    <app-event-card> </app-event-card>
-    <app-event-card> </app-event-card>
-    <app-event-card> </app-event-card>
-    <app-event-card> </app-event-card>
+    <app-event-card *ngFor="let item of concerts" [data]="item">
+    </app-event-card>
   </section>
 </div>
 

@@ -1,23 +1,22 @@
 <div class="container box-shadow">
   <section class="superior">
     <div class="date-time-container">
-      <span class="date">13 de Diciembre 2024</span>
-      <span class="time">15:08 PM</span>
+      <span class="date">{{ data.dateEvent }}</span>
+      <span class="time">{{ data.timeEvent }}</span>
     </div>
     <div class="genre-container">
-      <span>ROCK</span>
+      <span>{{ data.genre }}</span>
     </div>
   </section>
   <section class="middle">
-    <img
-      src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-glossy-music-event-poster-design-template-84d38a706368baec17981e71a5e5810d_screen.jpg?ts=1636991393"
-      alt=""
-    />
+    <img [src]="data.imageUrl" alt="event-cover" />
   </section>
   <section class="bottom">
     <div class="description-container">
-      <span>Bon Jovi en concierto, no te lo pierdas.</span>
+      <span>{{ data.description }}</span>
     </div>
-    <div class="place-container"><span>CC TEATRO LEGUIA - LIMA</span></div>
+    <div class="place-container">
+      <span>{{ data.place }}</span>
+    </div>
   </section>
 </div>
