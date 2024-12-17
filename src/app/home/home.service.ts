@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { HomeApiResponse } from './home.model';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ import { Observable } from 'rxjs';
 export class HomeService {
   private http = inject(HttpClient);
 
-  private baseUrl = 'https://localhost:7018';
+  private baseUrl = environment.baseUrl;
 
   getData(): Observable<HomeApiResponse> {
     const apiUrl = this.baseUrl + '/api/Home';

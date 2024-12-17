@@ -5,6 +5,7 @@
     <mat-form-field>
       <mat-label>Género musicals</mat-label>
       <mat-select>
+        <mat-option value="0">Todos</mat-option>
         <mat-option *ngFor="let item of genres" [value]="item.id">
           {{ item.name }}
         </mat-option>
