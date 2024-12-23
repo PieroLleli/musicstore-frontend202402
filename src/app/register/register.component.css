@@ -1,0 +1,35 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    & .title-container {
+      display: flex;
+      justify-content: center;
+      & .title-sub-container {
+        display: flex;
+        justify-content: center;
+        max-width: 1000px;
+        width: 100%;
+        padding: 20px;
+        & .title {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+    & .form-container {
+      display: flex;
+      min-height: 480px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      & .form-sub-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+  
