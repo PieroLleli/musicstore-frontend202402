@@ -4,18 +4,17 @@
   <section class="filter">
     <mat-form-field>
       <mat-label>Género musicals</mat-label>
-      <mat-select>
-        <mat-option value="0">Todos</mat-option>
+        <mat-select [formControl]="currentGenre">
+          <mat-option [value]="0">Todos</mat-option>
         <mat-option *ngFor="let item of genres" [value]="item.id">
           {{ item.name }}
         </mat-option>
       </mat-select>
     </mat-form-field>
-    <span>Seleccion tu género musical favorito</span>
+      <span>Seleccione tu género musical favorito</span>
   </section>
-
   <section class="event-list">
-    <app-event-card *ngFor="let item of concerts" [data]="item">
+      <app-event-card *ngFor="let item of currentConcerts" [data]="item">
     </app-event-card>
   </section>
 </div>
