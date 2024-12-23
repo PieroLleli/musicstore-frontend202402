@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../shared/components/header/header.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
+import { SimpleHeaderComponent } from '../shared/components/simple-header/simple-header.component';
 
 @Component({
   selector: 'app-login',
-  imports: [HeaderComponent, FooterComponent],
+  imports: [SimpleHeaderComponent, FooterComponent],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
 })
-export class LoginComponent {
-
-}
+export class LoginComponent {}
