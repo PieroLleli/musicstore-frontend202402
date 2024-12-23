@@ -1,9 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Concert } from '../../shared/models/concert.model';
+import { LowerCasePipe } from '@angular/common';
+import { TextLimitPipe } from '../../shared/pipes/text-limit.pipe';
 
 @Component({
   selector: 'app-event-card',
-  imports: [],
+  imports: [LowerCasePipe, TextLimitPipe],
   templateUrl: './event-card.component.html',
   styleUrl: './event-card.component.css',
 })

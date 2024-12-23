@@ -13,10 +13,10 @@
   </section>
   <section class="bottom">
     <div class="description-container">
-      <span>{{ data.description }}</span>
+      <span>{{ data.description | lowercase }}</span>
     </div>
     <div class="place-container">
-      <span>{{ data.place }}</span>
+      <span>{{ data.place | textLimit }}</span>
     </div>
   </section>
 </div>
