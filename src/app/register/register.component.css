@@ -1,35 +1,58 @@
-.main-container {
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  & .title-container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    & .title-container {
-      display: flex;
-      justify-content: center;
-      & .title-sub-container {
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    & .title {
+      font-weight: 500;
+      width: 1000px;
+    }
+  }
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    & .card {
+      background-color: var(--secondary-color);
+      border-radius: 8px;
+      width: 260px;
+      & .form-title-container {
         display: flex;
         justify-content: center;
-        max-width: 1000px;
-        width: 100%;
-        padding: 20px;
-        & .title {
-          font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        & .form-title {
+          color: var(--primary-color);
           font-weight: 500;
         }
       }
-    }
-    & .form-container {
-      display: flex;
-      min-height: 480px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      & .form-sub-container {
+      & form {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        height: 100%;
+        gap: 10px;
+        & button {
+          margin-top: 10px;
+          width: 210px;
+        }
+        & .login {
+          color: white;
+          font-size: 12px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          & .text-link {
+            color: var(--accent-color);
+            cursor: pointer;
+          }
+        }
       }
     }
   }
-  
+}

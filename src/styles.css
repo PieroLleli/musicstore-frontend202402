@@ -3,14 +3,13 @@
 @import "../public/assets/styles/colors.css";
 @import "../public/assets/styles/material.css";
 
-html {
+html,
+body {
   height: 100%;
 }
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
-  padding: 0;
-  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .box-shadow {

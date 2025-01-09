@@ -1,34 +1,60 @@
-.main-container {
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  & .title-container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    & .title-container {
-      display: flex;
-      justify-content: center;
-      & .title-sub-container {
+    justify-content: center;
+    & .title {
+      font-weight: 500;
+    }
+  }
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .card {
+      background-color: var(--secondary-color);
+      border-radius: 8px;
+      width: 260px;
+      & .form-title-container {
         display: flex;
         justify-content: center;
-        max-width: 1000px;
-        width: 100%;
-        padding: 20px;
-        & .title {
-          font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        & .form-title {
+          color: var(--primary-color);
           font-weight: 500;
         }
       }
-    }
-    & .form-container {
-      display: flex;
-      min-height: 480px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      & .form-sub-container {
+      & form {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        height: 100%;
+        & .email {
+          margin-bottom: 10px;
+        }
+        & .forgot-password {
+          color: var(--accent-color);
+          font-size: 12px;
+          margin-top: 16px;
+          margin-bottom: 10px;
+          & span {
+            cursor: pointer;
+          }
+        }
+        & .register {
+          color: white;
+          font-size: 12px;
+          margin-top: 20px;
+          margin-bottom: 30px;
+          & .text-link {
+            color: var(--accent-color);
+            cursor: pointer;
+          }
+        }
       }
     }
-  }  
+  }
+}

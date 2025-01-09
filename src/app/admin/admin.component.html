@@ -1,0 +1,44 @@
+<div class="page-container">
+  <app-logged-in-header></app-logged-in-header>
+  <div class="container">
+    <section class="navigation">
+      <div
+        class="nav-item box-shadow"
+        routerLink="/admin/sales"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/admin/sales.png" alt="sales" />
+        <span>VENTAS</span>
+      </div>
+      <div
+        class="nav-item box-shadow"
+        routerLink="/admin/events"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/admin/events.png" alt="events" />
+        <span>EVENTOS</span>
+      </div>
+      <div
+        class="nav-item box-shadow"
+        routerLink="/admin/genres"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/admin/genres.png" alt="genres" />
+        <span>GÉNEROS</span>
+      </div>
+
+      <div
+        class="nav-item box-shadow"
+        routerLink="/admin/reports"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/admin/reports.png" alt="reports" />
+        <span>REPORTES</span>
+      </div>
+    </section>
+    <section class="current-content">
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+  <app-footer></app-footer>
+</div>
